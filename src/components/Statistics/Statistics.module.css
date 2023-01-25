@@ -1,0 +1,12 @@
+.counterList{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.counterItem{
+    padding-bottom: 6px;
+    font-style:inherit;
+    font-size: small;
+    font-weight: lighter;
+}

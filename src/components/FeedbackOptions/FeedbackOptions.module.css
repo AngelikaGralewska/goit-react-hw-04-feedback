@@ -1,0 +1,14 @@
+.optionButton{
+    margin-right: 10px;
+    font-style:inherit;
+    font-size: small;
+    font-weight: lighter;
+    cursor: pointer;
+    border: none;
+    width: 65px;
+    height: 30px;
+}
+
+.optionButton:hover{
+    scale:110%;
+}
