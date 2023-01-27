@@ -20,16 +20,11 @@ export const App = () => {
       case 'good':
         setGood(good => good + 1);
         break;
-
       case 'neutral':
         setNeutral(neutral => neutral + 1);
         break;
-
       case 'bad':
         setBad(bad => bad + 1);
-        break;
-
-      default:
         break;
     }
     return;
@@ -43,7 +38,7 @@ export const App = () => {
     return Math.round((good / feedbackCounter()) * 100);
   }
 
-    const options = Object.keys({ good, neutral, bad });
+  const options = Object.keys({ good, neutral, bad });
   
     return (
       <div className={style.container}>
