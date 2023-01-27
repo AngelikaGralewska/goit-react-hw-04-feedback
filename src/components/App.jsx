@@ -15,7 +15,7 @@ export const App = () => {
   const [bad, setBad] = useState(0);
 
 
-  function leaveFeedback (value)  {
+  const leaveFeedback = (value) => {
     switch (value) {
       case 'good':
         setGood(good => good + 1);
@@ -25,16 +25,17 @@ export const App = () => {
         break;
       case 'bad':
         setBad(bad => bad + 1);
-        break;
+       break;
+      default:
+        return;
     }
-    return;
   };
 
-  function feedbackCounter() {
+  const feedbackCounter = () => {
     return good + neutral + bad;
   }
 
-  function positivePercentCounter() {
+  const positivePercentCounter = () => {
     return Math.round((good / feedbackCounter()) * 100);
   }
 
